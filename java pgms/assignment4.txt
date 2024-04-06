@@ -1,0 +1,87 @@
+package javaprogram;
+
+public class assignment4 {
+	static void addition() {
+		int a = 10;
+		int b= 20;
+		int sum= a + b;
+		System.out.println("printed from static method");
+		System.out.println(sum);
+}
+ static void subtraction() {
+	 int a = 10;
+		int b= 20;
+		int difference= b - a;
+		System.out.println("printed from static method");
+	System.out.println(difference);
+}			
+ static void multiplication() {
+	 int a = 10;
+		int b= 20;
+		int product= b  *a;
+		System.out.println("printed from static method");
+	 System.out.println(product);
+ }
+static void division() {
+	int a = 10;
+	int b= 20;
+	int quotient= b / a;
+	System.out.println("printed from static method");
+ System.out.println(quotient);
+  }
+static void modulo() {
+	int a = 10;
+	int b= 20;
+	int value= b % a;
+	System.out.println("printed from static method");
+ System.out.println(value);
+  }
+ void nonstaticadd() {
+	int x = 10;
+	int y= 20;
+	int sum= x + y;
+	System.out.println("printed from non-static method");
+	System.out.println(sum);
+}
+ void nonstaticsub() {
+ int x = 10;
+	int y= 20;
+	int difference= y - x;
+	System.out.println("printed from non-static method");
+System.out.println(difference);
+}			
+ void nonstaticmult() {
+ int x= 10;
+	int y= 20;
+	int product= y  *x;
+	System.out.println("printed from non-static method");
+ System.out.println(product);
+}
+ void nonstaticdiv() {
+int x = 10;
+int y= 20;
+int quotient= y / x;
+System.out.println("printed from non-static method");
+System.out.println(quotient);
+ }
+ void nonstaticmodulo() {
+	int x = 10;
+	int y= 20;
+	int value= y % x;
+	System.out.println("printed from non-static method");
+ System.out.println(value);
+  }
+public static void main(String[] args) {
+addition();
+subtraction();
+multiplication();
+division();
+modulo();
+assignment4 a1= new assignment4();
+a1.nonstaticadd();
+a1.nonstaticsub();
+a1.nonstaticmult();
+a1.nonstaticdiv();
+a1.nonstaticmodulo();
+}
+}

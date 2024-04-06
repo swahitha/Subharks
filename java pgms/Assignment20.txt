@@ -1,0 +1,52 @@
+package assignments;
+import java.util.Arrays;
+import java.util.Scanner;
+public class Assignment20 {
+	static Scanner newsc=new Scanner(System.in);
+public static void main(String[] args) {
+	System.out.println("Enter a string with special characters");
+	String name = newsc.next();
+	//String name="S@ang$12eet#ha 1";
+	int count_numbers=0;
+	int count_alphabets=0;
+	int count_spaces=0;
+	int count_splcharacters=0;
+	char n1[]=name.toCharArray();
+	//counting the number of digits
+	for(int i=0;i<n1.length;i++)
+	{
+	boolean c=Character.isDigit(n1[i]);
+	if (c==true)
+	      count_numbers++;
+		}
+	//counting the number of alphabets
+	for (int j=0;j<n1.length;j++)
+	{
+	boolean b=Character.isAlphabetic(n1[j]);
+	if (b==true)
+		count_alphabets++;
+	}
+	for (int k=0;k<n1.length;k++)
+		{
+		  boolean d=Character.isSpaceChar(n1[k]);
+		if (d==true)
+					count_spaces++;
+	     }
+	
+	// count of special characters is total length subtracted by the total of digits, alphabets and spaces
+		count_splcharacters = n1.length-(count_numbers+count_alphabets+count_spaces);
+		System.out.println("The number of special characters is " + count_splcharacters);
+
+		//Creating an array of length 5 int datatype and store using scanner class
+int newarray[]=new int[5];
+System.out.println("Enter the numbers in array");
+
+for (int i=0;i<5;i++)
+{
+	newarray[i]=newsc.nextInt();
+}
+System.out.println(Arrays.toString(newarray));
+
+}}
+
+

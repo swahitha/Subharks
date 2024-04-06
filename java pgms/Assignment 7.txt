@@ -1,0 +1,94 @@
+package javaprogram;
+import java.util.Scanner;
+//import java.util.*;
+
+public class Nonstatic_Scanner {
+	void nonstaticadd() {
+		Scanner p1= new Scanner(System.in);
+		System.out.println("enter first no");
+		int firstno=p1.nextInt();
+		System.out.println("enter second no");
+		int secondno=p1.nextInt();
+		System.out.println("printed from add");
+		System.out.println(firstno+secondno);
+			}
+	  void nonstaticsub() {
+			Scanner p1= new Scanner(System.in);
+			System.out.println("enter first no");
+			int sub2=p1.nextInt();
+			System.out.println("enter second no");
+			int no2=p1.nextInt();
+			System.out.println("printed from sub");
+			System.out.println(sub2-no2);
+				}
+		void nonstaticmult() {
+			Scanner p1= new Scanner(System.in);
+			System.out.println("enter first no");
+			int f3=p1.nextInt();
+			System.out.println("enter second no");
+			int no3=p1.nextInt();
+			System.out.println("printed from multiply");
+			System.out.println(f3*no3);
+					}
+			void nonstaticdiv() {
+				Scanner p1= new Scanner(System.in);
+				System.out.println("enter first no");
+				int f4=p1.nextInt();
+				System.out.println("enter second no");
+				int no4=p1.nextInt();
+				System.out.println("printed from division");
+				System.out.println(f4/no4);
+			}
+	void nonstaticmodulo() {
+				Scanner p1= new Scanner(System.in);
+				System.out.println("enter first no");
+				int f5=p1.nextInt();
+				System.out.println("enter second no");
+				int no5=p1.nextInt();
+				System.out.println("printed from modulo");
+				System.out.println(f5%no5);
+				p1.close();
+	}
+	
+public static void main(String[] args) {
+	Nonstatic_Scanner n1=new Nonstatic_Scanner();//creating object for non-static methods
+	n1.nonstaticadd();
+	n1.nonstaticsub();
+	n1.nonstaticmult();
+	n1.nonstaticdiv();
+	n1.nonstaticmodulo();
+	//p1.close();
+	}
+}
+
+Output:
+enter first no
+10
+enter second no
+20
+printed from add
+30
+enter first no
+30
+enter second no
+40
+printed from sub
+-10
+enter first no
+89
+enter second no
+34
+printed from multiply
+3026
+enter first no
+56
+enter second no
+65
+printed from division
+0
+enter first no
+76
+enter second no
+54
+printed from modulo
+22

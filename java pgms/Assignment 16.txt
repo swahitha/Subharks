@@ -1,0 +1,58 @@
+package javaproject;
+abstract class grandparent
+{
+	abstract void add();
+	abstract void sub();
+	void multi()
+	{
+		System.out.println("Multi_grandparent");
+	}
+	}
+abstract class parent extends grandparent
+
+{
+	abstract void addition();
+	abstract void subtraction();
+	void multiply()
+	{
+		System.out.println("Multiplication_parent");
+	}
+	}
+
+public class Abstract_Multi extends parent {
+
+	@Override
+	void addition() {
+		// TODO Auto-generated method stub
+		System.out.println("child class add override of parent");
+		
+	}
+
+	@Override
+	void subtraction() {
+		// TODO Auto-generated method stub
+		System.out.println("child class sub override of parent");
+		
+	}
+
+	@Override
+	void add() {
+		// TODO Auto-generated method stub
+		System.out.println("child class add override of grandparent");
+	}
+
+	@Override
+	void sub() {
+		// TODO Auto-generated method stub
+		System.out.println("child class sub override of grandparent");
+	}
+public static void main(String[] args) {
+	Abstract_Multi v1=new Abstract_Multi();
+	v1.add();
+	v1.addition();
+	v1.sub();
+	v1.subtraction();
+	v1.multiply();
+	
+}
+}
