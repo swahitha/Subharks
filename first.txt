@@ -1,0 +1,4 @@
+new file 
+
+git config --global user.email "swahitha_subha@yahoo.co.in"
+  git config --global user.name "Subharks"
